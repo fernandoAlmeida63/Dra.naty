@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'core/app_coordinator.dart';
+import 'design/theme.dart';
 
 class DraNatyApp extends StatelessWidget {
   final AppCoordinator coordinator;
@@ -11,6 +12,9 @@ class DraNatyApp extends StatelessWidget {
     return MaterialApp(
       navigatorKey: coordinator.navigatorKey,
       debugShowCheckedModeBanner: false,
+      theme: AppTheme.light,
+      darkTheme: AppTheme.dark,
+      themeMode: ThemeMode.system,
       home: coordinator.startApp(),
     );
   }
