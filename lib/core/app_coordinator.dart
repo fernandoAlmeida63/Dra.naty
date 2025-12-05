@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../scenes/login/login_factory.dart';
 import '../scenes/home/home_factory.dart';
+import '../design/examples/design_examples.dart';
 
 class AppCoordinator {
   final navigatorKey = GlobalKey<NavigatorState>();
@@ -23,5 +24,11 @@ class AppCoordinator {
 
   void goToRegister() {
     // Em breve você cria a tela
+  }
+
+  void goToDesignExamples() {
+    navigatorKey.currentState?.push(
+      MaterialPageRoute(builder: (_) => const DesignExamplesPage()),
+    );
   }
 }
