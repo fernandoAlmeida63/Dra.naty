@@ -131,15 +131,3 @@ git commit -m "Descrição da mudança"
 git push origin feature/minha-melhora
 # abra um Pull Request no GitHub
 ```
-
-**Licença**
-Adicione aqui a licença do projeto (por exemplo MIT) ou crie um arquivo `LICENSE`.
-
----
-
-Se quiser, eu posso:
-- adicionar um `LICENSE` (MIT) automaticamente,
-- configurar um workflow de CI (GitHub Actions) para rodar `flutter analyze` e `flutter test` em cada push,
-- ou aprimorar este `README` com screenshots e instruções específicas de deploy.
-
-Quer que eu adicione alguma dessas opções agora?
